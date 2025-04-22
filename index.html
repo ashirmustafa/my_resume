@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ashir Mustafa - Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .animate-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-text.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .text-glow {
+            animation: glow 2s ease-in-out infinite;
+        }
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+        }
+        .section-slide {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-slide.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+    <div class="max-w-3xl mx-auto p-6">
+        <!-- Header -->
+        <header class="mb-12 text-center animate-text">
+            <h1 class="text-4xl font-bold text-glow">Muhammad Ashir Mustafa</h1>
+            <p class="text-xl mt-2">Full Stack Developer</p>
+            <div class="mt-4 text-sm">
+                <p>Faisalabad, Pakistan | +92 3239652723 | muhammadashirone@gmail.com</p>
+                <p><a href="#" class="text-gray-400 hover:text-white">Portfolio</a> | <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></p>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mb-12 section-slide">
+            <h2 class="text-2xl font-semibold mb-4 text-glow">Professional Summary</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Skilled and versatile Full Stack Developer with strong expertise in React, Redux, TypeScript, and modern web technologies. Proven experience in building scalable applications using micro-frontends, Zustand for global state management, and GraphQL for efficient data handling. Adept at crafting responsive and user-friendly UIs using CSS/SCSS and UI/UX best practices. Passionate about delivering robust, high-performance apps with clean code and a focus on user experience.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-12 section-slide">
+            <h2 class="text-2xl font-semibold mb-4 text-glow">Technical Skills</h2>
+            <ul class="text-gray-300 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li><strong>Frontend:</strong> React.js, Next.js, Redux, Zustand, TypeScript, JavaScript, SCSS/SASS, Tailwind, UI/UX</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, MySQL, Oracle 11g</li>
+                <li><strong>APIs:</strong> REST, GraphQL, PKFARE, Google Places</li>
+                <li><strong>DevOps/Tools:</strong> Docker, Digital Ocean, Git, VS Code</li>
+                <li><strong>Others:</strong> Micro-Frontends, Responsive Design, Cross-Browser Compatibility, Adobe Premiere Pro</li>
+            </ul>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mb-12 section-slide">
+            <h2 class="text-2xl font-semibold mb-4 text-glow">Professional Experience</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold">MERN Stack Developer</h3>
+                    <p class="text-gray-400">Altaurux (Contract) - May 2024 to November 2024</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Developed Safra Tourism, a scalable travel platform for millions of users with AI-assisted and manual trip planning.</li>
+                        <li>Built advanced, custom calendar logic for trip scheduling.</li>
+                        <li>Integrated PKFARE APIs for real-time hotel and flight selection.</li>
+                        <li>Utilized Next.js, TypeScript, MySQL, Google Places API, and GraphQL.</li>
+                        <li>Deployed and managed services on DigitalOcean, ensuring high availability and performance.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Senior Frontend Engineer</h3>
+                    <p class="text-gray-400">GraduatesFirst, London, UK - 2023 to 2024</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Developed a comprehensive Applicant Tracking System (ATS) featuring skill assessments, video interview player, dynamic reporting dashboards, and integrated payment processing.</li>
+                        <li>Collaborated with global stakeholders to enhance user interaction and meet compliance standards.</li>
+                        <li>Built pixel-perfect, responsive components using React, Redux, and SCSS.</li>
+                        <li>Coded new features using ASP.NET Core across desktop and mobile.</li>
+                        <li>Conducted QA testing and improved UI/UX consistency across platforms.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Frontend Web Developer</h3>
+                    <p class="text-gray-400">EGTOS, Switzerland - Oct 2022 to Mar 2023</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Developed optimized and cross-browser-compatible layouts.</li>
+                        <li>Implemented front-end logic using HTML, CSS, JavaScript, and React.</li>
+                        <li>Converted business requirements into responsive interfaces.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">React JS Developer</h3>
+                    <p class="text-gray-400">Highlighters - Jan 2023 to May 2023</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Improved user experiences through interactive design and performance testing.</li>
+                        <li>Collaborated in UI/UX reviews and implemented accessibility best practices.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">React JS Developer</h3>
+                    <p class="text-gray-400">Kausar Processing Industries - 2022</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Designed responsive websites and maintained browser compatibility.</li>
+                        <li>Implemented frontend features following UI/UX principles.</li>
+                        <li>Delivered cross-team collaboration in a deadline-driven environment.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Web Developer (Freelance)</h3>
+                    <p class="text-gray-400">Self-Employed - 2020 to 2022</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Delivered full-stack solutions using MERN stack.</li>
+                        <li>Participated in Scrum-based teams and maintained well-documented, tested code.</li>
+                        <li>Assisted in project delivery from mockup to deployment.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Video Editor (Freelance)</h3>
+                    <p class="text-gray-400">2019 to 2022</p>
+                    <ul class="list-disc list-inside text-gray-300 mt-2 space-y-2">
+                        <li>Edited professional-quality videos using Adobe Premiere Pro with visual effects, sound balancing, and transitions.</li>
+                        <li>Collaborated with clients to deliver engaging multimedia content.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-12 section-slide">
+            <h2 class="text-2xl font-semibold mb-4 text-glow">Some Recent Projects</h2>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                <li>Safra Tourism</li>
+                <li>Crusade Technology</li>
+                <li>Index Core Web</li>
+                <li>Soloon Final Prelaunch</li>
+                <li>Easy Choice Wireless</li>
+                <li>Scan & Win Demo</li>
+                <li>Mediafire Clone</li>
+                <li>Portfolio</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-12 section-slide">
+            <h2 class="text-2xl font-semibold mb-4 text-glow">Education</h2>
+            <p class="text-gray-300">
+                <strong>BS Information Technology</strong><br>
+                Government College and University, Faisalabad (2020 - 2024)
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // Scroll animation logic
+        const elements = document.querySelectorAll('.animate-text, .section-slide');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
